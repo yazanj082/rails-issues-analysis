@@ -1,6 +1,7 @@
 import requests
 import pandas as pd
 import time
+import os
 
 # GitHub API settings
 REPO = "rails/rails"
@@ -16,6 +17,10 @@ PAGES = (TOTAL_ISSUES // ISSUES_PER_PAGE) + 1
 # Data collection
 issues_data = []
 rate_limit_exceeded = False
+
+# Create the output directory if it doesn't exist
+if not os.path.exists('data'):
+    os.makedirs('data')
 
 for page in range(1, PAGES + 1):
     print(f"Fetching page {page} of {PAGES}...")
