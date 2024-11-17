@@ -43,26 +43,28 @@ This project solves the following tasks:
 - Visualizations such as box plots, scatter plots, and bar charts provide insights into the data.
 - The performance of the classification model is reported, including accuracy metrics and a detailed explanation of the methodology used to train the model.
 
-  ### Project Structure
+# Project Structure
 
-  │
-  ├───data
-  │       rails_issues.csv              # Full dataset of collected issues
-  │       rails_issues_partial.csv      # A partial dataset (subset of the full dataset)
-  │
-  ├───plots
-  │       Box plot Issues Count per Label.png      # Visualization of issue count per label
-  │       Correlation Between Label Popularity and Number of Comments.png  # Visual correlation between label popularity and comments
-  │       Count of Author Issues.png    # Visualization of issues reported by authors
-  │       Count of Labels in Issues.png # Visualization of label distribution across issues
-  │       Count_of_Issues_Per_Year.png # Visualization of issues per year
-  │       Issues Statistics.png         # Summary statistics of issues
-  │       Number of Issues Over Time.png  # Visualization of issue counts over time
-  │
-  └───scripts
-          data_analysis.ipynb           # Jupyter notebook for data analysis and exploration
-          data_collect.py               # Python script to collect Rails issues from GitHub
-          rails-issues-classification.ipynb  # Jupyter notebook for training and testing classification model
+The project is organized as follows:
+
+- **data**
+  - `rails_issues.csv`: Full dataset of collected issues
+  - `rails_issues_partial.csv`: A partial dataset (subset of the full dataset)
+
+- **plots**
+  - `Box plot Issues Count per Label.png`: Visualization of issue count per label
+  - `Correlation Between Label Popularity and Number of Comments.png`: Visual correlation between label popularity and comments
+  - `Count of Author Issues.png`: Visualization of issues reported by authors
+  - `Count of Labels in Issues.png`: Visualization of label distribution across issues
+  - `Count_of_Issues_Per_Year.png`: Visualization of issues per year
+  - `Issues Statistics.png`: Summary statistics of issues
+  - `Number of Issues Over Time.png`: Visualization of issue counts over time
+
+- **scripts**
+  - `data_analysis.ipynb`: Jupyter notebook for data analysis and exploration
+  - `data_collect.py`: Python script to collect Rails issues from GitHub
+  - `rails-issues-classification.ipynb`: Jupyter notebook for training and testing classification model
+
   
 
 
